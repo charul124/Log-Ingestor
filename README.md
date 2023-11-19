@@ -1,8 +1,8 @@
-# Log Ingestor and Query Interface
+# Log Ingestor
 
 #### Project Demo
 
-![Project Demo](https://github.com/MasterZesty/log-ingestor-with-query-interface/blob/ffeae08b03cc207a6010ec697ada831b826b9774/docs/demo/project_demo.gif)
+
 ## Overview
 This system is designed to efficiently ingest, store, and query vast volumes of log data. It comprises a Log Ingestor responsible for accepting log data over HTTP and a Query Interface that enables users to perform full-text searches and apply filters on various log attributes.
 
@@ -18,8 +18,6 @@ This system is designed to efficiently ingest, store, and query vast volumes of 
    - Ingests logs in the provided JSON format via HTTP on port `3000`.
    - Ensures scalability to handle high log volumes.
    - Optimizes I/O operations and database write speeds.
-
-![Log Ingestor Demo](https://github.com/MasterZesty/log-ingestor-with-query-interface/blob/ffeae08b03cc207a6010ec697ada831b826b9774/docs/demo/log_ingestor.png)
    
 2. **Query Interface**
    - Offers a user-friendly interface (Web UI/CLI) for full-text search.
@@ -34,8 +32,6 @@ This system is designed to efficiently ingest, store, and query vast volumes of 
        - metadata.parentResourceId
    - Implements efficient search algorithms for quick results.
 
-![Query Interface Demo](https://github.com/MasterZesty/log-ingestor-with-query-interface/blob/main/docs/demo/query_interface_demo.gif)
-
 
 3. **Advanced Features (To be Implemented...)**
    - Search within specific date ranges.
@@ -48,7 +44,6 @@ This system is designed to efficiently ingest, store, and query vast volumes of 
 
 ### System Architecture Diagram
 
-![System Architecture Diagram](https://github.com/MasterZesty/log-ingestor-with-query-interface/blob/99270e69b6919d0beec3ef1ef5a3e0a9cd428db5/docs/imgs/architecture_v1.0.0.svg)
 ### Log Ingestor I - Log Publisher Service
 - Utilizes an HTTP server to receive logs.
 - Parses incoming JSON logs and publishes them to kafka topic.
@@ -78,7 +73,7 @@ This system is designed to efficiently ingest, store, and query vast volumes of 
 ### Installation
 1. Clone the repository
    ```bash
-   git clone https://github.com/MasterZesty/log-ingestor-with-query-interface.git
+ 
    ```
 2. Navigate to the project directory:
    ```bash
